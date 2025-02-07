@@ -44,6 +44,8 @@ set('provision_user', 'root');
 
 desc('Checks pre-required state');
 task('provision:check', function () {
+    var_dump('oi');
+    die();
     set('remote_user', get('provision_user'));
 
     $release = run('cat /etc/os-release');
